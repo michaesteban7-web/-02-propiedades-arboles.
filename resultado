@@ -1,0 +1,85 @@
+=== ÁRBOL MOVILIDAD ===
+└── MOVILIDAD 
+   └── MOTOS
+      └── ELECTRICAS
+      └── DE COMBUSTION
+         └── PULSAR
+         └── AKT
+   └── CARROS
+      └── ELECTRICOS
+      └── HIBRIDOS
+      └── DE COMBUSTION
+   └── BICICLETAS
+      └── ELECTRICAS
+      └── MANUALES 
+   └── TRANSPORTE PUBLICO
+      └── BUS
+      └── MANUALES 
+
+=== PROPIEDADES DEL ÁRBOL ===
+
+Raíz: MOVILIDAD 
+Número total de nodos: 16
+Número de hojas: 10
+Grado del árbol: 4
+Altura del árbol: 3
+Número de niveles: 4
+
+=== PROFUNDIDAD DE CINCO NODOS ===
+
+MOTOS                        -> 1
+CARROS                       -> 1
+BICICLETAS                   -> 1
+TRANSPORTE PUBLICO           -> 1
+PULSAR                       -> 3
+
+=== GRADO DE ALGUNOS NODOS ===
+MOVILIDAD                    -> 4
+MOTOS                        -> 2
+CARROS                       -> 3
+BICICLETAS                   -> 2
+TRANSPORTE PUBLICO           -> 2
+
+=== TABLA DE MÉTRICAS ===
+Nodo                         Grado    Nivel    Profundidad  Altura  
+--------------------------------------------------------------------
+MOVILIDAD                    4        0        0            3       
+MOTOS                        2        1        1            2       
+ELECTRICAS                   0        2        2            0       
+DE COMBUSTION                2        2        2            1       
+PULSAR                       0        3        3            0       
+AKT                          0        3        3            0       
+CARROS                       3        1        1            1       
+ELECTRICOS                   0        2        2            0       
+HIBRIDOS                     0        2        2            0       
+DE COMBUSTION                0        2        2            0       
+BICICLETAS                   2        1        1            1       
+ELECTRICAS                   0        2        2            0       
+MANUALES                     0        2        2            0       
+TRANSPORTE PUBLICO           2        1        1            1       
+BUS                          0        2        2            0       
+MANUALES                     0        2        2            0       
+
+=== CAMINOS ===
+MOVILIDAD  -> MOTOS
+Longitud: 1 aristas
+MOVILIDAD  -> CARROS
+Longitud: 1 aristas
+MOVILIDAD  -> BICICLETAS
+Longitud: 1 aristas
+MOVILIDAD  -> TRANSPORTE PUBLICO
+Longitud: 1 aristas
+MOVILIDAD  -> MOTOS -> DE COMBUSTION -> PULSAR
+Longitud: 3 aristas
+MOVILIDAD  -> MOTOS -> DE COMBUSTION -> AKT
+Longitud: 3 aristas
+MOVILIDAD  -> TRANSPORTE PUBLICO -> BUS
+Longitud: 2 aristas
+(sin ruta)
+Longitud: -1 aristas
+
+=== COMPARACIÓN ===
+Altura calculada manualmente: 3
+Altura calculada por Java: 3
+Resultado: COINCIDEN.
+PS C:\Users\micha\OneDrive\Documentos\ESTRUCTURA DE DATOS II\02-propiedades-arboles> 
